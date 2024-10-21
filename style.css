@@ -1,0 +1,44 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+select, button {
+  margin: 10px;
+  padding: 8px;
+}
+
+/* Grid container styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(50, 20px);
+  grid-template-rows: repeat(30, 20px);
+  gap: 1px;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.cell.alive {
+  background-color: yellow;
+}

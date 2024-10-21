@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conway's Game of Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Conway's Game of Life</h1>
+
+  <!-- Grid container for the game -->
+  <div class="grid-container" id="grid"></div>
+
+  <!-- Controls for the game -->
+  <div class="controls">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+
+    <!-- Pattern selection -->
+    <label for="patterns">Select a pattern:</label>
+    <select id="patterns">
+      <option value="glider">Glider</option>
+      <option value="blinker">Blinker</option>
+      <option value="beehive">Beehive</option>
+      <option value="pulsar">Pulsar</option>
+    </select>
+    <button id="addPattern">Add Pattern</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
